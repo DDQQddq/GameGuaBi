@@ -1,6 +1,5 @@
 import turtle
 import time
-from tkinter import *
 
 turtle.title('冰墩墩')
 
@@ -365,5 +364,7 @@ turtle.pencolor("black")
 turtle.goto(-16, -160)
 turtle.write("BEIJING 2022", font=('Arial', 10, 'bold italic'))
 turtle.hideturtle()
+
+im = turtle.getscreen().getcanvas().postscript(file='BingDwenDwen.eps')
 
 time.sleep(10)
