@@ -1,7 +1,7 @@
 import pyautogui
 import time
 
-png = r'C:\Users\elfdobby\pythonProject\GameGuaBi\ThumbsUp\03.png'
+png = r'C:\Users\elfdobby\pythonProject\script\ThumbsUp\04.png'
 
 pyautogui.click(405, 1055)
 pyautogui.moveTo(1100, 500)
@@ -21,5 +21,5 @@ while True:
         kill()
 
     else:
-        pyautogui.scroll(300)
+        pyautogui.scroll(-300)
         print("NEXT")
