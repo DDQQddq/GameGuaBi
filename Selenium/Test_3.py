@@ -11,10 +11,10 @@ browser = webdriver.Chrome(options=option)
 browser.get("http://yqtb.nwpu.edu.cn/wx/xg/yz-mobile/index.jsp")
 user_name_input = browser.find_element(By.ID, "username")
 # 括号内的引号内为你本人的学号
-user_name_input.send_keys('2021301992')
+user_name_input.send_keys('xxxxxxxx')
 user_pwd_input = browser.find_element(By.ID, "password")
 # 括号内的引号内为你本人翱翔门户的密码
-user_pwd_input.send_keys('dq031208.')
+user_pwd_input.send_keys('xxxxxxxx')
 login_button = browser.find_element(
     By.XPATH, "/html/body/main/div/div/div[2]/div[3]/div/div[2]/div[3]/div/div/div[1]/div[1]/form/div[4]/div/input[5]")
 ActionChains(browser).move_to_element(login_button).click(login_button).perform()
