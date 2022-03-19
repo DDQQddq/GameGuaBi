@@ -1,7 +1,9 @@
+import os
+import sys
 import pyautogui
 import time
 
-png = r'C:\Users\elfdobby\pythonProject\script\ThumbsUp\04.png'
+png = r'C:\Users\elfdobby\pythonProject\script\ThumbsUp\05.png'
 
 pyautogui.click(405, 1055)
 pyautogui.moveTo(1100, 500)
@@ -16,10 +18,17 @@ def kill():
     print('Bingo!')
 
 
-while True:
+error = 0
+while error <= 5:
     if pyautogui.locateOnScreen(png):
         kill()
+        error = 0
 
     else:
         pyautogui.scroll(-300)
         print("NEXT")
+        error += 1
+
+if error > 5:
+    os.system("start.wav")
+    sys.exit()
